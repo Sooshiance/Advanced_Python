@@ -25,7 +25,11 @@ Objects that can be used with **`await`** keyword.
 
 # asyncio
 
-It's used for I/O-bound operations (network requests, file operations, etc.) where waiting for external resources is the bottleneck.
+It's used for I/O-bound operations (network requests, file operations, etc.) where waiting for external resources is the bottleneck. We will discus about most important functions & classes of it.
+
+- 1. ***`async`***
+- 2. ***`await`***
+- 3. ***`create_task()`***
 
 # threading
 

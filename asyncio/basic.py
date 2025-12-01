@@ -1,6 +1,8 @@
 import asyncio
 
 
+################################################## tiny! ##################################################
+
 async def say_hello():
     await asyncio.sleep(1)
     print("Hello")
@@ -18,3 +20,28 @@ async def main():
 
 
 asyncio.run(main())
+
+
+################################################## await affect ##################################################
+
+
+async def do_a():
+    print("A started")
+    await asyncio.sleep(2)
+    print("A finished")
+
+
+async def do_b():
+    print("B started")
+    await asyncio.sleep(1)
+    print("B finished")
+
+
+async def do_double():
+    await do_a()
+    await do_b()
+
+asyncio.run(do_double())
+
+
+################################################## ##################################################

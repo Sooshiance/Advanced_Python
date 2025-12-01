@@ -27,9 +27,9 @@ Objects that can be used with **`await`** keyword.
 
 It's used for I/O-bound operations (network requests, file operations, etc.) where waiting for external resources is the bottleneck. We will discus about most important functions & classes of it.
 
-- 1. ***`async`***
-- 2. ***`await`***
-- 3. ***`create_task()`***
+- 1. ***`async`***: Calling an async function doesn’t run it immediately—it returns a coroutine object that must be `awaited` or `scheduled` to run.
+- 2. ***`await`***: Suspends execution of the current `coroutine` until the awaited coroutine or task completes.
+- 3. ***`create_task()`***: Schedules a coroutine to run concurrently as an `asyncio` Task.
 
 # threading
 
